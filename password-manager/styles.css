@@ -15,7 +15,7 @@ body {
     color: #fff;
     position: relative;
     padding-top: 10px;
-    transition: width 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3)
 }
 
 .sidebar h1 {
@@ -38,35 +38,39 @@ body {
 
 /* Search Bar styling*/
 .search-container {
+    width: 80%;
     height: 30px;
-    border-radius: 30px;
-    padding: 5px 5px;
-    margin: 25px 50px;
+    border-radius: 5px;
+    padding: 0px 5px;
+    margin: 25px 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    position: relative;
-}
-
-search-container:hover > .search-input {
-    width: 400px;
+    position: fixed;
+    background-color: #292b2f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .search-container .search-input {
-    font-size: large;
+    width: 100%;
+    background: #292b2f;
+    color:rgba(255, 255, 255, 0.54);
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 16px;
 }
 
-@keyframes hoverShake {
-  0% {transform: skew(0deg,0deg);}
-  25% {transform: skew(5deg, 5deg);}
-  75% {transform: skew(-5deg, -5deg);}
-  100% {transform: skew(0deg,0deg);}
+.search-container .search-btn {
+    margin: 5px;
+    background-color: #292b2f;
+    border: none;
+    height: 100%;
+    cursor: pointer;
 }
 
-.search-container:hover{
-  animation: hoverShake 0.15s linear 2;
+.search-container .search-btn .search-btn-img {
+    height: 25px;
+    ;
 }
 
-/* background-color: #292b2f 
-*/
