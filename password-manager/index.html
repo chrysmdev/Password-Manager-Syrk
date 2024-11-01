@@ -3,10 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Electron App</title>
+  <title>Password Manager</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Hello from Electron!</h1>
-  <button onclick="alert('Button clicked!')">Click Me</button>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h1>Project P4SS</h1>
+    <button class="add-password">Add Password</button>
+
+    <div class="categories">
+    <h3>Categories</h3>
+    </div>
+    <div class="user">
+      USER HERE
+    </div>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-container">
+    <input type="text" name="search" placeholder="Search for a password..." class="search_input">
+    </div>
+  
+  <!-- All Passwords Table -->
+  <section class="all-passwords">
+    <h2>All passwords</h2>
+  </section>
+
+
+  </div>
 </body>
 </html>
