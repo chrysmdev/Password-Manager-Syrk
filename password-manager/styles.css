@@ -25,7 +25,7 @@ body {
     margin-bottom: 10px;
 }
 
-.sidebar .button-add-password {
+.sidebar .button-add-account {
     align-items: center;
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     border: 0;
@@ -50,12 +50,12 @@ body {
     cursor: pointer;
 }
 
-.button-add-password:active,
-.button-add-password:hover {
+.button-add-account:active,
+.button-add-account:hover {
     outline: 0;
 }
 
-.sidebar .button-add-password span {
+.sidebar .button-add-account span {
     background-color: rgb(5, 6, 45);
     padding: 10px 10px;
     border-radius: 5px;
@@ -64,12 +64,12 @@ body {
     width: 100%;
 }
 
-.button-add-password:hover span {
+.button-add-account:hover span {
     background: none;
 }
 
 @media (min-width: 768px) {
-    .button-add-password {
+    .button-add-account {
         font-size: 24px;
         min-width: 196px;
     }
@@ -127,3 +127,23 @@ body {
     ;
 }
 
+/* Table styling */
+
+.main h2 {
+    margin: 80px 300px;
+    color: #FFFFFF;
+    
+}
+
+.tableAc {
+    position: relative;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 110px 300px;
+}
+
+.tableAc th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
