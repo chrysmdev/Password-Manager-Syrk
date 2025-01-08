@@ -129,18 +129,13 @@ body {
 
 /* Table styling */
 
-.main h2 {
-    margin: 80px 300px;
-    color: #FFFFFF;
-    
-}
-
-.tableAc {
+#main {
     position: relative;
     width: 100%;
-    border-collapse: collapse;
     margin: 110px 300px;
+    color: #fff;
 }
+
 
 .tableAc th, td {
     border: 1px solid #ccc;
