@@ -129,16 +129,37 @@ body {
 
 /* Table styling */
 
-#main {
-    position: relative;
-    width: 100%;
-    margin: 110px 300px;
-    color: #fff;
+.container {
+    width: 1545px;
+    max-width: 100%;
+    margin: 100px 300px;
+    overflow: hidden;
+    border: 1px solid #292b2f;
+    border-radius: 5px;
 }
 
+.table-container {
+    overflow-y: auto;
+    max-height: 100%;
+}
 
-.tableAc th, td {
-    border: 1px solid #ccc;
-    padding: 10px;
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px 12px;
     text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    position: sticky;
+    top: 0;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
 }

@@ -1,27 +1,28 @@
-function createTable(content) {
-    var table = document.createElement("table");
-    var thead = document.createElement("thead");
-    var tbody = document.createElement("tbody");
-    var thd = function(i){return (i==0)?"th":"td";};
+// JSON fornecido
+import { data } from "./Contas.js";
 
-    for (var i=0; i < content.length;i++) {
-        var tr = document.createElement("tr")
-        for (var o=0; o < content[i].length; o++){
-            var t = document.createElement(thd(i));
-            var text = document.createTextNode(content[i][o]);
-            t.appendChild(text);
-            tr.appendChild(t);
-        }
-        (i==0)?thead.appendChild(tr):tbody.appendChild(tr)
-    }
-    table.appendChild(thead);
-    table.appendChild(tbody);
-    return table
-}
-document.getElementById("main").appendChild(createTable([
-    ["id", "nome",     "idade"],
-    [1,    "matheus",  16],
-    [2,    "cristian", 16],
-    [3,    "pedro",    10],
-    [4,    "henrique", 10]
-]));
+// Selecionar o corpo da tabela
+const tableBody = document.getElementById("table-body");
+
+// Preencher a tabela
+data.Contas.forEach(item => {
+const row = document.createElement("tr");
+
+const websiteCell = document.createElement("td");
+websiteCell.textContent = item.Website || "";
+row.appendChild(websiteCell);
+
+const loginCell = document.createElement("td");
+loginCell.textContent = item.LOGIN || "";
+row.appendChild(loginCell);
+
+const passwordCell = document.createElement("td");
+passwordCell.textContent = item.Password || "";
+row.appendChild(passwordCell);
+
+const notesCell = document.createElement("td");
+notesCell.textContent = item.Notes || "";
+row.appendChild(notesCell);
+
+tableBody.appendChild(row);
+});
