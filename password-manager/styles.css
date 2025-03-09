@@ -136,7 +136,7 @@ body {
     overflow: visible;
     border: 1px solid #292b2f;
     border-radius: 5px;
-    
+    color: rgba(255, 255, 255, 0.894)
 }
 
 .table-container {
